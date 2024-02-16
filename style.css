@@ -29,18 +29,25 @@
     padding-top: 1rem;
 }
 .logo{
-    width:80px;
-}
+      width:70px;
+      height: 70px;
+      display: block;
+      margin-right: 5px;
+   }
+
+
 .logo-container{
     display: flex;
     justify-content: baseline; 
     align-items: center;
+}
 
+.logo-text {
+   margin-left: -1.2rem;
+   font-size: 40px;
+   font-weight: bold; /* or normal, lighter, etc. */
 }
-.logo-text{
-    margin-left:-1.2rem ;
-    font-size: 28px;
-}
+
 .nav-items{
     display: flex;
     gap: 2rem;
@@ -63,7 +70,10 @@ a{
 
 .nav-items div:hover{
     font-weight: bold;
-    transition: 0.8s;
+    transition: 0.8s; 
+    box-shadow: 0 0 5px rgba(192, 173, 173, 0.3); 
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 /* HERO SECTION */
 .hero-section{
@@ -110,6 +120,9 @@ a{
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
+    line-height: 1.6;
+    
+    padding: 10px;
 }
 
 .btn-pink {
@@ -288,7 +301,7 @@ transform: translateY(-12px) rotateY(180deg);
     padding-top: 30px;
  }
  .project-container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin:0 auto;
     padding: 3rem 0;
     display: flex;
@@ -296,9 +309,9 @@ transform: translateY(-12px) rotateY(180deg);
     gap: 120px;
  }
  .project-card{
-    width: 90%;    
+    width: 92%;    
     height: 550px;
-    background:url(./images/projects/Project1.png); 
+    background:url(./images/projects/StudyNotion.png); 
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -312,7 +325,7 @@ transform: translateY(-12px) rotateY(180deg);
     bottom: 0;
     left: 0;
     right:0 ;
-    background-color: #1f1f1f9a;
+    background-color: #3938389a;
     z-index: 0;
  }
  .project-card::before{
@@ -417,22 +430,35 @@ font-style: italic;
     transform: scaleY(1.1);
  }
  #project1{
-    background-image: url(./images/projects/Project1.png);
+    background-image: url(./images/projects/mern\ App.png);
+    background-size:cover ;
  }
 
  #project2{
     margin-left: 120px;
-    background-image: url( ./images/projects/Project2.png);
+    background-image: url( ./images/projects/passwordGenerator.png);
+    background-size:cover ;
  }
 
  #project3{
-    background-image: url( ./images/projects/Project3.png);
+    background-image: url( ./images/projects/ReactApp.png);
+    background-size:cover ;
  }
 
  #project4{
     margin-left: 120px;
-    background-image: url( ./images/projects/Project4.png);
- }
+    background-image: url( ./images/projects/plansumit.png);
+    background-size:cover ;
+  }
+  #project5{
+   background-image: url( ./images/projects/imgonline-com-ua-twotoone-xmNXQkN6qvRr.jpg);
+   background-size:cover ;
+}
+#project6{
+   margin-left: 120px;
+   background-image: url( ./images/projects/tic-tac\ toe.png);
+   background-size:cover ;
+}
 
  /* @media (max-width:1300px) {
     .page-header {
@@ -501,7 +527,7 @@ font-style: italic;
             display: flex;
             padding: 5rem;
             margin: 10rem 0;
-            gap: 30px;
+            gap: 35px;
         }
         .skills-container-left{
             display: flex;
@@ -512,7 +538,7 @@ font-style: italic;
         .skills-container-right{
             display: flex;
             position: relative;
-            width: 50%;
+            width: 40%;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -544,12 +570,13 @@ font-style: italic;
             }
         }
         .skills-logo{
-            width: 90px;
+            width: 120px;
             transition: all 0.5s;
+            gap: 1.3rem;
         }
 
         .skills-logo:hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
 
         }
         .skills-heading{
